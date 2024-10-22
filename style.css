@@ -1,0 +1,161 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: darkgrey;
+font-family: 'Papyrus', fantasy;
+background-color: #000000;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+line-height: 1.6;
+background: #ffffff;
+color: #333;
+}
+
+.image{
+width: 1200px;
+height: 600px;
+}
+
+header {
+background: black;
+color: darkgray;
+padding: 15px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 10;
+transition: background 0.3s;
+}
+
+header.scrolled {
+background: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+font-size: 25px;
+}
+
+.arrange{
+
+display: flex;
+flex-wrap: wrap; /* Allows wrapping to the next line if there's not enough space */
+justify-content: center; /* Centers the cards */
+gap: 40px; /* Space between the cards */
+padding: 20px;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: x-large;
+font-weight: bolder;
+border-style: hidden;
+}
+
+
+#none{
+border-style: hidden;
+box-shadow: none ;
+width: 18rem;
+
+}
+
+.card img {
+border-radius: 0; /* Removes any default rounded corners on images */
+}
+
+nav ul {
+list-style: none;
+display: flex;
+}
+
+nav ul li {
+margin-left: 20px;
+}
+
+nav ul li a {
+color: #ecf0f1;
+text-decoration: none;
+padding: 5px 10px;
+border-radius: 5px;
+transition: color 0.3s, background 0.3s;
+border: none;
+}
+
+nav ul li a:hover {
+color: #fff;
+background: #e74c3c;
+border: none;
+}
+
+.hero {
+background: url('./freepik-export-20240924065322Rn4B.jpg') no-repeat center center / cover;
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+animation: fadeIn 5S ease;
+}
+
+.cta-button {
+background: #e74c3c;
+color: #fff;
+padding: 12px 24px;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+transition: background 0.3s;
+}
+
+.cta-button:hover {
+background: #c0392b;
+}
+
+section {
+padding: 40px 20px;
+text-align: center;
+}
+
+.fade-in {
+animation: fadeIn 3s ease;
+}
+
+.menu-item {
+margin: 20px 0;
+transition: transform 0.3s;
+border-style: hidden;
+}
+
+.gap{
+margin-bottom:10px;
+}
+.menu-item:hover {
+transform: scale(1.05);
+}
+
+.gallery-item {
+display: inline-block;
+margin: 10px;
+}
+
+.gallery-item img {
+width: 300px;
+height: auto;
+
+transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+transform: scale(1.1);
+}
+
+footer {
+background: #000000;
+color: #fff;
+text-align: center;
+padding: 20px 0;
+}

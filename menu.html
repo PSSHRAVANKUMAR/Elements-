@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements Restaurant</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg logo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: rgb(228, 228, 228);">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdwAAABqCAMAAAAhmRAbAAAAxlBMVEX///8AAADEEjCcnJzu7u7z8/P8/Pz5+fmUlJTMzMwjIyNHR0fg4OC7u7ujo6PBwcGxsbHm5ubDACnCACMoKCjBABtVVVVjY2Nra2vCACDCACW/AAjRWGf99/jS0tLBABrZhIw5OTmIiIj66u388vThl6Dst8D34OTAABPNQlbuwMfjnqdeXl7LNUxAQEDy0dZ9fX3IHjzejpjlpa3yzNPZd4TWbHoVFRXUXm/psbnHFTbOTF3VZ3XKK0XsvMPAAAzWdH/Yfoc70yJ/AAAQWklEQVR4nO2d+0ObPBfHa+e8TN1mkE2wDBVqbw92pZf1rv3//6mXAAknN+RZg9Ln5fuT0DQgnyY5OTknNBq1atWqVatWrVq1atXaS95ku2shcrTdzMPtxPvIG6qlR97wvjdCloHuyJmnLjKs5qY16PgfeWO19tVkF5gGamJlcM34OAK+CjsfeXO19pA33nRTshK4Md9ub+t85C3W+jt596OMrBwu5msEA7Z39navu1k9IldZTrixmozkcCO8bm8BvujPw8F4u6rpVlfbJUswBy7GuxrSb44Xi/l41A8/5LZrvS1vbSGebQ7cCC8KydA77Yx785k3/aBbr/WG+htDxGdncO9E8k2jlxrOu854ttp6s4+6+Vp5ckKXg4cM1w2mA1KgE7Y2d6bNF7KTkXcy3S4m03ChrL/WB6r9wrVJtAr7/HzHG08Dy+a65qTtDtbD4bQecqspfw06ZWRs7ofymazXXy9h94226QfDMJy83+3W+ldyeoQZ6gYLStaf9BdY/Qx2J0R0vvTSf7vm46+f3tZVWvgX/8G5uuKTswIVf08LX0o/Vdd+JSt+dpleucCF6ZWvi13y9Dt3rV/pB9z5HJ0p/xunl3S4Vu8pOeEN261oUDVi2TbarLedk/gTv520XtQswLZx+efobf1Mam584j9Q33DjpEC9R/+kha/kn56oKr+Rlv+Wgihy5Yu0pnPu/Kn8gqc/uHLkx/Fc5GKJ1M/KWxmYVxi7npzhNEDs1AjZ5rLVThxTnZkN++RcXX4pcFu36VP+yn/wSV1xIbg/08JyuEfHirp/yYv/G7g/0qp4uL/lVzz9hytH4F4UuViiHApezzCDxD5a9FzeME4AW2iauC62tnFXpN1WHO43Rd3CfTDF94J79Et6xTLgngAfsdOLvRLOeCRxZxDZbivG681gu80xpioN91ZRt+KJaoH7LO2Yy4A7aAGHcAx62DPUaGO8y138GwC1tC11D11puM/yfllVtRa4R19llywB7tC1VuykJ5T2x6ysgG2pAwsh5aJBpeEq+khVaT1wpSO9frhegJpGz4cnRB+ybOx1ocMCe0DslWqJt9pwH6VV/1aU1gRXNhjohzvFUxoj65mHm7ebbdp4X+lPoh3PoaxBQ65qw72R1Xz8oCitCe6RZLKrHe4kcVxYrbTV9RHLFhmW2+1uNqOXrsv5HZvmPP3SgLg0FNE31YZ7dC27ZVVhXXAvPosXveXK7AnXIe3UCOJm2L9jybqrcJGu2fqT8euIXVuwejHdNvmS3TpIuDLr5lFVWBdcmW+Gv+iecAd0fH0ZY7Ysu2DXien5i+kwfvT+dt6EzdeaRz8JJ3NKu/J5b8Xh/pQ4qZTPUxvco8uS4Xp0gEVB9B92RgCugdrJQNwJN67hzlNv83BugkImXpz36AnUktpUFYcrcQeqHab64Io2lV64YRYvFQ2XDmCL3F3cT/tPvZd40otcI0w66H4PRFlZ2GbeZk336RDhXgkVf1eW1QdXvKxWuP6GMmpHh7sMGtpgl4TTud8Ad4axbPUxcX8KlvwMTHxG15NWfw33Z1lw8xcOsERfL+/Cz6Rj4SDVM29TqeD+1cLBmDLBE91tNr9Ngmee1tzCAY54DHFfPcjoImxUdZb0UOaFFOD+PhNF/pO94D7mVKyGK1qu6qengnubc2UFXMGmUsH9CisVFqvg/wzm7HTE7T4l3gzCtuU3huGSD7uJ4VndWWQ19TOzysQdM+3fbVkQlQBX7hTSAFc2qyFSwxXu55u6qApuzqqzEi5vU6ngQp0KfbTcfTrpws70nrZGO2rHUyQGy5GP0Saim3Xhy6iV+/R34EoSid4PrmiBZuLgPoC/eScVeMp/ONNKBVe1uISlhPuDLVcE7mcBrvwHvSP8jAVj8gadhtPiHBaMcEBk1jMbuLGG5NCUhMhVEu4/4KYe1A/wgnuYWuFyNtUZ9+kecGk/jFsiaLhmZCI5rTwnZBztOqVt14yaboe267U4a6wm3Efl96B76jdnW+mF+8CM9nwQyh5wJ27KA5vKHiUXe4gLwPXpGG3cR4dzcrQUF4cqCfcHfOTsY4Qt6LxUuKyhrhEu7ZXxHJe6quJmDOGKf6RJCH2XnsC2NmnIEi9VNeFeg7tiHQqA5x/+YWqGyzwKjXB7pFduOQ1nRdDZMRsCF1nuirDtNYlv6o6toGmOQScvsZcrCfeImczCsQTe7m/eOtUN9wKU0we3MwL98JC6IefxhwlcZPbCjpc2SaN9Mp7bBoA7oV9aR0evNvkRCJeqKFz4LK8UBb+XDRcuW+iDS9F0O2DRLu1UI7jRXCh2SBG4eGR2hlOcvEvSh2jfPYqqGFvggFU157ms3QQKwpW369Lh3mT3rA9uBqMBuuhNMk11WnebdgzJH5AWuU6On1ZdAveJjLpm9JPwSDqK6KQS4H49/yaIFN4L7nex4nOyLCDA/fyQHUAnFSjzIDxMFdwzyb9ErpwLF/yu9MGdUWgRS2IZGWnsjBMmQ+9w3aRmF7Jb29gS7kzTEconPbuxix40ORBnuoV8y1rgykT+eQEu4zTIOhOI4rEw3Lwr58PNGr0+uKSx4iF3QlwWJjR1vfbKZnwZ0Rh834Gmx4w0eOziIpOheGZ0EHDh2k/m54UToV9CvI0OuL9ZQNSFwq9F/T1cI1U3amgL0jzvss+3M1uMXUaG28rSiLKhuhkdhN2kQlNYGaoqXEjomdQJkzqi8ZC/dx1wP3G+a9XSxt/Dnd6nAvYUCshTGyA+Yorytew5qYP6QfBUebJLKxTyOKsKt/EADomhfQ3ORcPhNbcKowPuGRct9edSN1yoHRl/yRy1gIcqLqY2oqAqCxcOcrIlx69lwT1mT9zK71APXGJcEXuqKNwGgWtLIzCIKgsXPnXipPoJzh2XBZdfIziX3qEWuNQ/ZZKUkKJwqbmcu11CZeGePoDjxFKEMJ9PSoPLhc58kd6hZrjEWP4/gcuMfQk2aOtgCGXB5c59kt1h2XBtl9pViP7534ELJx/Jij1MI8Egy4LL56tcS+5QD1wy5zXJ0Jn6li0061P342Dymi4d/HfgQtM4SfeDJXBHXQbc2Cd1yoZ44DA+PrpHk0FF/A/QoEJ2L+ycML5lb7xCNoRLAnUO1KBidyrATiqYTx8HwZQBNwn05FwWV2IOix64r+JUyDXnkyTDJHVw2PHmcM5k5loUrn/gUyHWav3UECZCZcLl42d1wu21Ug2zRYRkpR4z3CV7snYGI9I4m4Y5jRE644C4IGmI3YE6MdiW+ixpyWXC5dIaHjXCbdooFh5nqfvRJdiwi9HfztndE4xmb+w1QEY9XVlaNjL3o3sw7kcscOLPJeNcuDgtGS6/UHCpseVKFw6y7rUTBq7ggUTmcgp64FeycIDdlnThYPcm3C83gv5ogSup+CYfLsyJvWLGwWQprihcyZXfhHvK1v1TH1w6zmJPMY11I13qNk0REmV3R+20kGLJTzCuBLh5ARN7wVXtO4Qlhwtx3krmvXxKmI6gdJpWyH2gL255AbvUFW2CZLFeGZMeFSIG1YJE1cWL9TTE/e3F+mqE2ST3BuEx63vJ8j2/HZWOSIwsZ5Sd7PKphX8Pl+bivsjDbNRwFWE2JjhgVWW4TJYVbDrp1nLlwuU7fVY6AuSiXnZIW2WSHF8I7oR+6TAD5BKpcujTwLVy4ebkih7tNc+lXfHcATARE9qaC5eWYUNbxc3SKw1XsQ0gqapkuDnJonqC0pewX07W6zO4MBWXnJMFpfdJryzJv6403GvFPC39uGy4yp1VjvaCO4TpJFmaXpyHncLFlvE27W7t3ThIXzeUpJPQBNDDTCehE2t+D5lEZHm3bLhC9hfQHnBpsg8KHJCm17TSRDBkjmZb1rc8nAZ46YBLBMPJ9TQRDB1KIpjaa8LAKgPuLXxEn9V581pSOO1tNGZmIayBF8E1UZAELkO40dFi1TTiFE7a1OOQqiyFcyxeqJpwyUM55ivB+kJqKgPuj9O8TzPtA3dI3f54nM12xLBXjrPakdkqCxd/rd09aWyzARcP2Q5F/SLZz6aaGQf0hyAbdGladBlw2cRNxbhwtOeqEE3CdLltE+CLvQS4WE9ZYr2Lz9NtEwzZi4UEuOennwWRX7MA90xSOC0rwP0lFv2syjigcGWTIRrGXBTuleQuyW2+AVfadWDtBZf6/dHKZ4AZq8wRIYM7oCWTvVLonLnghicPF4KeH1W72dyIhS+OFXCfJRWTdA0lXNkOGPTDonBl/xIxyt6Aq9q3ez+41DfcNDG5zERq2tm7C0S4zjTrk5tdvFXRWsNWRcp9qGRSwZVJtVUR5Xcs3t4NffxF4cqk2oeKhyu83CDVfov1YbY7EWYUAM+FO+0o4G7hi8MMfHaRWdrS/QE/Fq5qk7HM+BKfbZac9R5wVZPd/eBm42zc5IbM9oCb5EUWLNyTzhru6xpvduIvaS1lbA8ok1644iWzx/oucBU+0D3DbNq06cZ7YwOnE8Y5wm+BYuAu5szmVEa8beucNtw7ebRN1eGKDSd7+u8DV17dvjFU2dbZceZlv9uEMqzRdEw8VNPxymBTwxK29/QHIt1h7ADgCg/sS3bv7wNXvq3ZvnC3Ga0lbnaLJrdiYFMri98rMJ0xLbJwjWUpm2nLpBeusOc92LfvneBKJ7t7Rz/OQXI1ZsNvla6Wizdbhj252VZco/Jw+YU3EFbxXnCvJd/fG262nVQTjbDJ7MEdd9VCKI7IWWRs7Xk5L7CQSTNcbiPPBxCt815wZf/3/nHLYBdHNMI9s78r0HitIM4ZW8BzJb16RibdcH9Iv/GucCXvDtQQlA4muyjZhWoyMvPxIncWkxyAd+5a6qSDasKFIW3sReFLD94PrmhT6cg4WIN++CWMn/Fgk4PXdtfxnun+HNjWZs57kasJF249xT5+GENZBtwbKVxxsqsDrge3aLVX6Q5Fqle+Wct58jaLyQZ8zZQtGBBVHy6zMsSsyJUBVxGBe8x3zFpyhTzomULNQfImksncsljAyLasUfqmA/8ezowspTGFdQBw4UyE2X35HeFq3M0GiqHbNEckwX4bzkeua1pYbtfuvY7Tmaw/NqBNba1zq8+LE6IibykWXo4s07+BSx5xbvYrHPCYpVkeTPqT2O8dB6rYec7JLYX7wFf2FtxGpweD0JG9WqQbnju+P3lqDwaDcb/jk9bpDQImZt16zWu3EYPjAiLj0GmRwiROZZ+KT1W3yMQJqb5V5MrHijqOxUgkaUHpi1iFiyhf3U3lMXTxdmJthbupMbzfsL6q/D651sfLmbMv30RWNxhM+Kmr1w9HXTbTBImJX7WqphPhtbnIQpvedNDvJNq2172R8F4LtMxNqq9VEfWb4qZxkYHsduP9MbqmJfFcGYGq965VLXkz2auEcoTMsB5uD0b9oNCqAem2V3WzPST57WVBvMjaLOpme2DyQ/TGskGMtrsZ1GgPUM54ZeUk1sdm9Pzp7blzrUrKn0w3SLFwgKxmcD+sW+0hy+m3e2bXMmwy/0EI2YbVRatx7oZitQ5EznB8P2sF8SuUl0Ewfw3HtXn8n5LjebGDyvPqrrhWrVq1atWqVatWrVq1alVT/wOxl+O+kqA35AAAAABJRU5ErkJggg==" alt="Logo" width="100" height="24" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" style="color: darkgray;" href="rest.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: rgb(255, 255, 255);" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: rgb(245, 245, 245);" href="feed.html">Feedback</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade hero" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+               <a href="special.html"> <img src="SPECIAL.PNG" class="d-block w-100" alt="Delicious Indian dish"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="offers.html"><img src="discount.png" class="d-block w-100" alt="Continental cuisine"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="best.html">  <img src="best.png" class="d-block w-100" alt="Restaurant ambiance"></a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <div class="arrange " style="padding-top: 80px;" >
+
+      
+      <div class="card menu-item" id="none" style="width: 18rem;" onclick="window.location.href= 'salads.html';">
+        <img src="https://img.freepik.com/premium-photo/salads-with-quinoa_960396-682454.jpg?ga=GA1.1.1613020024.1723446047&semt=ais_hybrid" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Salads</p>
+          <p style="font-size: medium; text-justify:auto;">"Vibrant Bowls of Goodness: Where Fresh Meets Flavor!"</p>
+          </div>
+      </div>
+    
+
+    <div class="card menu-item" id="none" style="width: 18rem;" onclick="window.location.href= 'soups.html';">
+        <img src="https://img.freepik.com/free-photo/tomato-soup-with-green-table_140725-2447.jpg?ga=GA1.1.1613020024.1723446047&semt=ais_hybrid" class="card-img-top" alt="..." height="200px" width="35px">
+        <div class="card-body">
+          <p class="card-text">Soups</p>
+          <p style="font-size: medium;">"Crafted with Love, Served in Every Sip."</p>
+        </div>
+
+      </div><div class="card menu-item" id="none" style="width: 18rem;" onclick="window.location.href= 'appetizer.html';">
+        <img src="https://img.freepik.com/free-photo/bbq-grill-cooked-with-hot-spicy-sichuan-pepper-sauce-is-chinese-herb_1150-13495.jpg?ga=GA1.1.1613020024.1723446047&semt=ais_hybrid" class="card-img-top" alt="..." height="200px" width="35px">
+        <div class="card-body">
+          <p class="card-text">Appetizers</p>
+          <p style="font-size: medium; text-justify:auto;">"Small Bites, Big Flavor: Your Taste Adventure Begins Here!"</p>
+        </div>
+
+      </div><div class="card menu-item" id="none" style="width: 18rem;" onclick="window.location.href= 'bread.html';">
+        <img src="https://img.freepik.com/free-photo/fresh-homemade-gourmet-meal-bread-meat-vegetable-dessert-snack-generated-by-artificial-intelligence_188544-126597.jpg?ga=GA1.1.1613020024.1723446047&semt=ais_hybrid" class="card-img-top"  alt="..." height="200px" width="35px">
+        <div class="card-body">
+          <p class="card-text">Breads</p>
+          <p style="font-size: medium; text-justify:auto;">"Freshly Baked Bliss: The Perfect Companion to Every Meal!"</p>
+        </div>
+
+      </div><div class="card menu-item" id="none" style="width: 18rem;" onclick="window.location.href= 'main.html';">
+        <img src="https://t3.ftcdn.net/jpg/03/33/04/02/240_F_333040259_XAngCfVMVrmZbJXD3fqH4DVhMaTK7KbV.jpg" alt="..." >
+        <div class="card-body">
+          <p class="card-text">Main Course</p>
+          <p style="font-size: medium; text-justify:auto;">"Main Course Masterpieces: Where Every Bite Tells a Story!"</p>  
+        </div>
+      </div>
+
+
+      <div class="card menu-item" id="none" style="width: 18rem;" onclick="window.location.href= 'biryanis.html';">
+        <img src="https://img.freepik.com/premium-photo/spicy-chicken-biryani-wooden-plate_740566-21320.jpg?ga=GA1.1.1613020024.1723446047&semt=ais_hybrid" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Biryanis and More</p>
+          <p style="font-size: medium; text-justify:auto;">
+            "Flavorful Journeys: Biryani and Beyond!"</p>
+        </div>
+      </div>
+
+
+
+      <div class="card menu-item" id="none" style="width: 18rem;" onclick="window.location.href= 'dessert.html';">
+        <img src="https://img.freepik.com/premium-photo/delicious-sweet-honey-cake-with-butter-cream-strawberries-plate-gray-background_219193-31.jpg?ga=GA1.1.1613020024.1723446047&semt=ais_hybrid" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Desserts</p>
+          <p style="font-size: medium; text-justify:auto;">"Satisfy Your Sweet Tooth: Desserts Crafted with Love!"</p>
+        </div>
+      </div>
+
+
+      <div class="card menu-item" id="none" style="width: 18rem;" onclick="window.location.href= 'beverages.html';">
+        <img src="https://img.freepik.com/free-photo/delicious-beverage-with-mint-leaves_23-2148751852.jpg?ga=GA1.1.1613020024.1723446047&semt=ais_hybrid" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Beverages</p>
+          <p style="font-size: medium; text-justify:auto;">"Cheers to Flavor: Quench Your Thirst with Style!"</p>
+        </div>
+      </div>
+      </div>
+
+      <footer>
+        <p>&copy; 2024 Elements Restaurant. All rights reserved.</p>
+    </footer>
+
+    </body>
+    </html>
